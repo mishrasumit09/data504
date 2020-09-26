@@ -34,7 +34,7 @@ Link to be posted here
 
 1. `data table` versus `tidyverse`
 2. Loops and functions in R
-**Material** Chapters from R4DS | [`data.table`Page](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
+<br> **Material** Chapters from R4DS | [`data.table`Page](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
 
 **02- Introduction to Data**
 
