@@ -34,7 +34,6 @@ Link to be posted here
 
 1. `data table` versus `tidyverse`
 2. Loops and functions in R
-
 **Material** Chapters from R4DS | [`data.table`Page](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
 
 **02- Introduction to Data**
@@ -44,4 +43,14 @@ Link to be posted here
 3. Experiments
 Case Study: *using stents to prevent strokes*
 
-**Material**: Chapter 1, IntroStatistics. 
+**Material**: Chapter 1, IntroStatistics.
+
+**03- Summarizing Data**
+
+1. Examining continuous data
+2. Considering categorical data
+Case study: *Malaria Vaccine*
+
+**Material**: Chapter2, IntroStatistics. 
+
+
