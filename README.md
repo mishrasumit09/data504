@@ -116,6 +116,7 @@ Case study: *Malaria Vaccine*
 2. Model selection
 3. Checking model condition using graphs 
 4. Introduction to logistic regression
+
 Case study: *Mario Kart*
 
 **Material**: Chapter 9, *OpenIntro Statistics*.
