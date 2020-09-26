@@ -36,3 +36,12 @@ Link to be posted here
 2. Loops and functions in R
 
 **Material** Chapters from R4DS | [`data.table`Page](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
+
+**02- Introduction to Data**
+
+1. Data basics.
+2. Sampling principles and strategies.
+3. Experiments
+Case Study: *using stents to prevent strokes*
+
+**Material**: Chapter 1, IntroStatistics. 
