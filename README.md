@@ -4,12 +4,12 @@ Welcome to Data Science 504: Data Analytics in R, taught by [Sumit Mishra](https
 
 ## Schedule
 
-**Lecture** Tuesday and Thursday, 10:00am–11:30am, 
+**Lecture** Tuesday and Thursday, 12:00–13:30pm, 
 
 
 **Office hours**
 
-- Thursday (2pm–3pm); Friday (1pm–2pm)
+- Friday (2pm–3pm)
 
 
 ## Syllabus
