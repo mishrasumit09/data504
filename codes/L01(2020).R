@@ -1,213 +1,218 @@
-# intro to data.table
-# writing loops and functions in R
+# In order to work on anything in R, you need to have packages.
+# This is analagous to buying a phone, and installing apps from
+# play store
+install.packages("pacman")
+pacman::p_load(tidyverse,data.table, here)
 
-pacman::p_load(tidyverse, dplyr, data.table, 
-               microbenchmark,wooldridge)
+# In R, we work with objects 
+# Objects are of types- numeric, character, logical, and factor
+# (in excel, your work revolves around cells)
+# creating an object in R
 
-# learn data.table
+25
 
-# dplyr versus data.table
+# if you want R to remember that 25 is the minimum age
+# for drinking in Maharashrtra, you need to save it as
+# a named object.
+min_age <- 25
 
-# code with dplyr
-starwars %>%
-  filter(species == "Human") %>% 
-  group_by(homeworld) %>% 
-  summarise(mean_height = mean(height))
-
-# code with data.table()
-starwars_dt = as.data.table(starwars)
-starwars_dt[species == "Human", 
-            mean(height, na.rm=T), 
-            by=homeworld]
-
-
-# order/arrange data with data.table()
-setorder(starwars_dt, 
-         birth_year, 
-         na.last = TRUE)
-head(starwars_dt[, name:birth_year]) 
+# note that the LHS is the name
+#      and the RHS contains the values.
+# the two are separated by `<-` which translates to equal
+# this will be our go to syntax. 
 
 
-# manipulate column using :=
-wage1.new <- wage1 %>%
-  select(wage, exper, educ, female, tenure, nonwhite) %>%
-  as.data.table()
-wage1.new[, lwage := log(wage)]
-head(wage1.new)
+# Different types of objects--
 
-# creating multiple columns
-# example 1
-dt <- data.table(mtcars)[,.(mpg, cyl)]
-dt[,`:=`(avg=mean(mpg), med=median(mpg), min=min(mpg)), by=cyl]
-head(dt)
-# example 2
-wage1.new[, `:=`(lwage = log(wage), 
-                 expersq = exper*exper, 
-                 tenuresq = tenure*tenure)]
-head(wage1.new)
+# 1. Numeric
+a_number <- 99
+an_integer <- 99L
 
-# Sub-assign by reference
-# create a fake data
-DT2 <- data.table(a = -2:2, b = LETTERS[1:5])
-DT2 
-# change b to NA wherever a < 0
-DT2[a < 0, b := NA][] 
+set_integers <- 1L:100L
+
+# 2. Character
+an_alphabet <- "e"
+
+# 3. Logical
+# Did Rashiben remove chana from cooker?
+that_is <- TRUE
 
 
-# Chaining multiple operations
-# adding a new column and their transformation(s)
-DT = data.table(x = 1:2)
-DT[, z := 5:6][, z_sq := z^2][]
-
-DT %>%
-  .[, xz := x+z] %>%
-  .[, xz_sq := xz^2] %>%
-  .[]
-
-# Remove a column
-DT[, xz_sq := NULL]
-DT
-
-# Subset by column
-# subset by column position
-names(starwars_dt)
-starwars_dt[, c(1:3, 10)] %>% head(2)
-# subset by column name
-starwars_dt[, .(name, height, mass, homeworld)] %>% head(2)
-
-# exclude a column through negation
-starwars_dt[, !c("name", "height")]
-
-#setnames[starwars_dt, old = "name", new = "alias"][]
-#setnames[starwars_dt, old = "alias", new = "name"]
-
-#
-wage1.new[, mean(wage, na.rm=T)] #computes mean
-
-# create a new column for average wage
-wage1.new[, mean_wage := mean(wage, na.rm=T)] %>% 
-  head(5)
-
-# get total number of observations
-wage1.new[, .N]
-
-# Group by
-starwars_dt[, mean(height, na.rm=T), 
-            by = species] #Collapse by single variable
-starwars_dt[, .(species_height = mean(height, na.rm=T)), 
-            by = species]:#name the summary variable
-starwars_dt[, mean(mass, na.rm=T), 
-              by = height>190] #Conditionals work too.
-starwars_dt[, species_n := .N, by = species][] 
-
-#Add an aggregated column to the data
-wage1.new[, mean(wage, na.rm=T),
-          by = female] # collapse by a single variable
-wage1.new[, .(gender_wage = mean(wage, na.rm = T)),
-          by = female] %>% head(5) # name the summary variable
-wage1.new[, .(gender_wage = mean(wage, na.rm=T)), 
-          by = educ > 11] # conditional works as well!
-wage1.new[, .(gr_wage = mean(wage, na.rm = T)),
-          by = .(female, nonwhite)][]
-
-# Efficient subsetting with .SD
-wage1.new[, .(mean(wage, na.rm = T), 
-              mean(exper, na.rm = T), 
-              mean(educ, na.rm = T)),
-          by = female]
-# using lapply to summarize
-wage1.new[, 
-          lapply(.SD, mean, na.rm=T),
-          by = female, 
-          .SDcols = c("wage", "educ", "exper")] %>% 
-  head(2) ## Just keep everything on the slide
-
-# what if we want to summarize all the variables in the dataset?
-DT
-DT[, lapply(.SD, mean)]
+#---------------------------------------------------------------------#
+# Rules for creating objects in R:
+# • R is case-sensitive.
+# • Names cannot contain any special character 
+#   except for underscore or period.
+# • R overwrites objects.
+# • The list of objects can be gleaned by typing ls() in the console
+#---------------------------------------------------------------------#
 
 
-# Using keyby
-# setting a key
-DT = data.table(x = 1:10, y = LETTERS[1:10], key = "x")
-# you can have multiple keys
-DT = as.data.table(DT, key = c("x", "y"))
-DT
+# Functions in R
+# performing any task in R requires the knowledge of functions.
+# you need to call the name of the function 
+# and sandwich the operation (formally known as the argument) 
+# within parentheses.
+# `NAME OF THE FUNCTION(YOUR ARGUMENTS GO HERE)`
 
-# First create a keyed version of the storms data.table.
-## Note that key variables match the 'by' grouping variables below.
-storms_dt_key = as.data.table(storms, 
-                              key = c("name", "year", "month", "day"))
-## Collapse function for this keyed data.table. 
-## Everything else stays the same.
-collapse_dt_key = function() {
-  storms_dt_key[, .(wind = mean(wind), 
-                    pressure = mean(pressure), 
-                    category = first(category)), 
-                by = .(name, year, month, day)]
-}
+# Basic functions in R:
+#   i. print(): print an object
+#  ii. mean():  calculates average
+# iii. round(): rounds off any number
+#  iv. sample(): randomly sample objects.
+# Let's run one by one each of these functions
 
-# Merge datasets
-dataset1 <- as.data.table(data.table(
-  name = c("Arun", "Nishi", "Preeti"),
-  age = c(24, 22, 24)),
-  key = name)
-dataset2 <- as.data.table(
-  data.table(name = c("Arun", "Nishi"),
-             age = c(24, 22),
-             major =c("Commerce", "Maths")),
-  key = name)
-dataset1[dataset2, on = "name"]
+print(min_age)
 
-merge(dataset1, dataset2, by = "name")
+print(a_number)
 
-## left join
-merge(
-  dataset1, 
-  dataset2, 
-  all.x = TRUE, ## omit for inner join
-  by = "name")
+mean(set_integers)
 
-## note that age variable appears twice. 
-## let's try to fix that
-merged <- merge(
-  dataset1, 
-  dataset2, 
-  all.x = TRUE, ## omit for inner join
-  by = "name")
-colnames(merged) <- gsub('.x','',names(merged))
-merged[, age.y := NULL]
+round(2.8584)
+
+# Each function can have one or many arguments 
+# For example, when we rounded off 2.8584 in R, we got 3 as the answer.
+# What if we wanted R to round off this number upto 2 decimal places?
+# We will add another argument to the function.
+# Fine, but how do I know what argument to add?
+# we will invoke args() to get all the arguments of the function round()
+args(round)
+
+# ah, so we see that round has two arguments:
+#           1. x (a number or a set of numbers)
+#           2. digits (probably, the number of decimal places?)
+round(2.8584, digits=2)
 
 
-# Reshaping data with data.table()
-## dcast(): convert wide data to long data
-## melt(): convert long data to wide data
-## tidyfast functions
-### tidyfast::dt_pivot_longer(): wide to long
-### tidyfast::dt_pivot_wider(): long to wide
+sample(set_integers) # scrambles the numbers
 
-## wide to long--
-stocks = data.table(time = as.Date('2020-01-01') + 0:10,
-                    X = rnorm(11, 0, 1),
-                    Y = rnorm(11, 0, 2),
-                    Z = rnorm(11, 0, 4))
-melt(stocks, id.vars ="time")
-## some more cleanup
-stocks_long = melt(stocks, id.vars ="time", 
-                   variable.name = "stock", value.name = "price")
-
-## long to wide
-dcast(stocks_long, 
-      time ~ stock, 
-      value.var = "price")
+# we want to pick five numbers from `set_integers`.
+# how do we do that?
+# check arguments of this function!
+sample(set_integers,size=5, replace = T)
 
 
-## library(ggplot2) # already loaded
-storms_dt <- as.data.table(storms)
-storms_dt[, .(wind = mean(wind), 
-              pressure = mean(pressure), 
-              category = first(category)), 
-          by = .(name, year, month, day)] %>%
-  ggplot(aes(x = pressure, y = wind, col=category)) +
-  geom_point(alpha = 0.3) + 
-  theme_minimal()
+# When you create an object in R , 
+# you should try to know more about the object. 
+# One way is to look at the
+# Global Environment window of R Studio 
+# which contains the following information
+# Name, Type, Length, Size, Value.
+# The structured way of doing this:
+# use functions!
+#  class(): tells you whether the object is numeric/character/logical
+#  str(): quick snapshot of the object
+#  typeof(): what's the specific type within the class?
+
+class(set_integers)
+class(a_number)
+class(an_alphabet)
+
+str(set_integers)
+str(a_number)
+
+typeof(set_integers)
+typeof(a_number)
+
+
+
+# a key object in R is a vector 
+# vector are like individual columns in excel.
+# the header is the name of the object in R.
+# we put comma separated objects inside c() to create vectors
+nv <- c(10,30,60,90) # numeric
+cv <- c("A", "B", "C", "D") # character
+lv <- c(T, T, F, F) #logical
+
+# Index in R
+# Just like excel has A1, B25, etc, we have index in R.
+# We can call any object by appending [] to the object.
+nv[1]
+nv[2]
+nv[1:2]
+nv[2:4]
+
+# EXERCISE: 
+# what if i want the first and the fourth object of nv?
+
+
+# Some useful functions to create vectors:
+# rep(), seq()
+nv.rep <- rep(nv, 2)
+
+ap <- seq(from=1, to=9, by=2)
+
+# Working with logicals
+# You have data on a student's age, and you want to see if
+# their age is above the minimum drinking age object
+# you defined earlier.
+stu_age <- 24
+stu_age >= min_age # greater than or equal to
+stu_age == min_age # equal to
+stu_age != min_age # not equal to
+
+
+# University tenures are dependent on 
+# number of papers or student evaluation
+num_papers <- 3 #number of papers
+teach_rating <- 4.2 #average rating
+num_papers >= 4 | teach_rating >= 4 #check if eligible for promotion
+
+# you can check if a vector contains a given set of objects by
+# using `%in%`
+16 %in% nv
+
+c(10,15,20) %in% nv
+
+
+# More logical functions:
+# any(): check if any of the objects meet the condition
+# all(): check if all the objects meet the condition
+# which(): tells you which object satisfies the condition
+
+grp_stu <- c(20,23,26,29,24)
+any(grp_stu >= 25)
+all(grp_stu >=25)
+which(grp_stu >= 25)
+
+# Filtering data or subsetting data
+# we will use [] to subset vectors
+set_integers <- 1:100
+
+set_integers[set_integers > 20]
+set_integers[set_integers < 25]
+
+# Multiple conditions can also be added
+# There are two types of multiple conditions:
+# and (denoted by: `&`) and or (represented by: `|`)
+
+set_integers[set_integers > 20 & set_integers < 50]
+set_integers[set_integers < 20 | set_integers >= 80]
+
+set_integers[set_integers > 100]
+
+
+# summarizing a vector in R
+class(set_integers)
+length(set_integers) # returns the length of the object
+max(set_integers) # tells you the max
+min(set_integers) # tells us the min
+sum(set_integers) # computes the sum
+var(set_integers) # calculates the variance
+quantile(set_integers, probs = seq(0, 1, 0.1)) #percentiles
+summary(set_integers)
+
+exam_scores <- c(80,45,72,90)
+names <- c("Chin2", "Pin2", "Min2", "Rin2")
+
+
+# how do we stitch these different objects together?
+# enter data.frame
+exam_db <- data.frame(names, exam_scores)
+
+
+# let's read an excel file into R
+df <- readxl::read_excel("data/wbGDPdata.xlsx")
+
+# read a csv file in R
+df <- read_csv("data/schoolDB.csv")
