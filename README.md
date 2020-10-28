@@ -32,8 +32,8 @@ Link to be posted here
 
 **01- Introduction**
 
-1. `data table` versus `tidyverse`
-2. Loops and functions in R
+1. Introduction to R
+2. Introduction to `data table`
 
 **Material** Chapters from R4DS | [`data.table`Page](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-intro.html)
 
