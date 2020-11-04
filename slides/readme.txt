@@ -1,1 +1,1 @@
-These slides have been adapted from the material developed by Mine &Ccedil;etinkaya-Rundel of OpenIntro.
+These slides have been adapted from the material developed by Mine Cetinkaya-Rundel of OpenIntro.
