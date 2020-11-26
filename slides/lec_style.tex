@@ -1,0 +1,340 @@
+\newenvironment{transitionframe}{
+  \setbeamercolor{background canvas}{bg=yellow}
+  \begin{frame}}{
+    \end{frame}
+}
+
+
+\setbeamercolor{frametitle}{fg=blue}
+\setbeamercolor{title}{fg=black}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{itemize items}{-}
+\setbeamercolor{itemize item}{fg=blue}
+\setbeamercolor{itemize subitem}{fg=blue}
+\setbeamercolor{enumerate item}{fg=blue}
+\setbeamercolor{enumerate subitem}{fg=blue}
+\setbeamercolor{button}{bg=MyBackground,fg=blue,}
+
+
+% If you like road maps, rather than having clutter at the top, have a roadmap show up at the end of each section 
+% (and after your introduction)
+% Uncomment this is if you want the roadmap!
+% \AtBeginSection[]
+% {
+%    \begin{frame}
+%        \frametitle{Roadmap of Talk}
+%        \tableofcontents[currentsection]
+%    \end{frame}
+% }
+\setbeamercolor{section in toc}{fg=blue}
+\setbeamercolor{subsection in toc}{fg=red}
+\setbeamersize{text margin left=1em,text margin right=1em} 
+
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{10pt}}{\enditemize}
+
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+%\setbeamertemplate{caption}[numbered]
+\usepackage{adjustbox}
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{tabls, calc}
+\usepackage[tableposition=top]{caption}
+\usepackage{ifthen}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{caption}
+\usepackage{subfigure}	
+%\usepackage{custom}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{dcolumn}
+\usepackage{multirow}
+\usepackage{markdown}
+\usepackage{siunitx}
+\usepackage{tfrupee}
+%\usepackage[table]{xcolor}
+%\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+
+\tcbset{width=0.9\textwidth,boxrule=0pt,colback=red,arc=0pt,auto outer arc,left=0pt,right=0pt,boxsep=5pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Note}[1]{
+\rule{2.5cm}{0.25pt} \\ \textit{\footnotesize{\textcolor{rubineRed}{Note:} \textcolor{darkerGray}{#1}}}}
+
+\newcommand{\formula}[1]{
+\begin{beamerboxesrounded}[shadow = false, lower = formula body]{}
+#1
+\end{beamerboxesrounded}
+}
+
+\setbeamercolor{prac ques body}{fg=oiB}
+
+\newcommand{\pq}[1]{
+\begin{beamerboxesrounded}[shadow = false, lower = prac ques body]{}
+#1
+\end{beamerboxesrounded}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hl}[1]{\textit{\textcolor{hlblue}{#1}}}
+\newcommand{\hlGr}[1]{\textit{\textcolor{lightGreen}{#1}}}
+\newcommand{\mathhl}[1]{\textcolor{hlblue}{\ensuremath{#1}}}
+
+
+%%%Define Colors Here
+\definecolor{applegreen}{rgb}{0.55, 0.71, 0.0}
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+\definecolor{pink}{rgb}{0.858, 0.188, 0.478}
+\definecolor{purple}{HTML}{6A5ACD}
+\definecolor{orange}{HTML}{FFA500}
+\definecolor{denim}{rgb}{0.08, 0.38, 0.74}
+\definecolor{seagreen}{rgb}{0.13, 0.7, 0.67}
+\definecolor{tangerine}{rgb}{0.95, 0.52, 0.0}
+\definecolor{textboxgreen}{rgb}{0.67, 0.88, 0.69}
+\definecolor{textboxred}{HTML}{BF616A}
+\definecolor{redPink}{HTML}{e64173}
+\definecolor{turquoise}{HTML}{20B2AA}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\xdefinecolor{oiB}{rgb}{0.22,0.52,0.72}
+\definecolor{oiG}{rgb}{.298,.447,.114}
+\xdefinecolor{hlblue}{rgb}{0.051,0.65,1}
+\xdefinecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\xdefinecolor{darkGray}{rgb}{0.3, 0.3, 0.3}
+\xdefinecolor{darkerGray}{rgb}{0.2, 0.2, 0.2}
+\xdefinecolor{rubineRed}{rgb}{0.89,0,0.30}
+\xdefinecolor{irishGreen}{rgb}{0,0.60,0}	
+\definecolor{lightGreen}{rgb}{0.387,0.581,0.148} 
+\setbeamercolor{frametitle}{fg=denim}
+
+%$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dq}[1]{
+\begin{beamerboxesrounded}[shadow = false, lower = disc ques body]{}
+#1
+\end{beamerboxesrounded}
+}
+
+% solnMult: solutions for practice questions
+
+\newcommand{\solnMult}[1]{
+\item[] \vspace{-0.59cm}
+\only<1>{\item #1}
+\soln{\only<2->{\item \orange{#1}}}
+}
+
+% removepagenumbers
+\newcommand{\removepagenumbers}{% 
+  \setbeamertemplate{footline}{}
+}
+
+\newcommand{\soln}[1]{\textit{#1}}
+\newcommand{\solnGr}[1]{#1}
+
+
+%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+%\usepackage{cancel}
+\usepackage{epstopdf}
+\usepackage{amsmath}  	% this permits text in eqnarray among other benefits
+\usepackage{url}		% produces hyperlinks
+\usepackage{hyperref}	% allows for color usage in tables
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{colortbl}	% allows for color usage in tables
+\usepackage{multirow}	% allows for rows that span multiple rows in tables
+\usepackage{color}		% this package has a variety of color options
+\usepackage{pgf}
+\usepackage{calc}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{textcomp}
+%\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{wasysym}
+\usepackage{fancyvrb}
+%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%
+% Custom commands
+%%%%%%%%%%%%%%%%
+
+% degree
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+
+% cite
+\newcommand{\ct}[1]{
+\vfill
+{\tiny #1}}
+
+
+% Remember
+\newcommand{\Remember}[1]{\textit{\scriptsize{\textcolor{orange}{Remember:} #1}}}
+
+% expected counts
+\newcommand{\ex}[1]{\textit{\textcolor{blue}{#1}}}
+
+% red
+\newcommand{\red}[1]{\textit{\textcolor{rubineRed}{#1}}}
+
+% pink
+\newcommand{\pink}[1]{\textit{\textcolor{rubineRed!90!white!50}{#1}}}
+
+% green
+\newcommand{\green}[1]{\textit{\textcolor{irishGreen}{#1}}}
+
+% orange
+\newcommand{\orange}[1]{\textit{\textcolor{orange}{#1}}}
+
+% links: webURL, webLin, appLink
+\newcommand{\webURL}[1]{\urlstyle{same}{ \textit{\textcolor{darkGray}{\url{#1}}}}}
+\newcommand{\webLink}[2]{\href{#1}{\textcolor{darkGray}{{#2}}}}
+\newcommand{\appLink}[2]{\href{#1}{\textcolor{white}{{#2}}}}
+
+% mail
+\newcommand{\mail}[1]{\href{mailto:#1}{\textit{\textcolor{darkGray}{#1}}}}
+
+
+% two col: two columns
+\newenvironment{twocol}[4]{
+\begin{columns}[c]
+\column{#1\textwidth}
+#3
+\column{#2\textwidth}
+#4
+\end{columns}
+}
+
+
+
+
+% slot (for probability calculations)
+\newenvironment{slot}[2]{
+\begin{array}{c} 
+\underline{#1} \\ 
+#2
+\end{array}
+}
+
+% pr: left and right parentheses
+\newcommand{\pr}[1]{
+\left( #1 \right)
+}
+
+
+% cancel
+\newcommand{\cancel}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red, line width=0.5mm] (tocancel.south west) -- (tocancel.north east);
+    }%
+}
+
+
+%%%%%%%%%%%%%%%%
+% Custom boxes
+%%%%%%%%%%%%%%%%
+
+% app: application exercise
+
+\setbeamercolor{app body}{fg=oiG}
+
+\newcommand{\app}[1]{
+\begin{beamerboxesrounded}[shadow = false, lower = app body]{}
+#1
+\end{beamerboxesrounded}
+}
+
+
+%%%%%%%%%%%%%%%%
+% Change margin
+%%%%%%%%%%%%%%%%
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item}{\end{list}}
+
+%%%%%%%%%%%%%%%%
+% Footnote
+%%%%%%%%%%%%%%%%
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%%%%%%%%%%%%%%%%
+% Commands from the book
+%%%%%%%%%%%%%%%%
+
+\newenvironment{data}[1]{\texttt{#1}}{}
+\newenvironment{var}[1]{\texttt{#1}}{}
+\newenvironment{resp}[1]{\texttt{#1}}{}
+
+%%%%%%%%%%%%%%%%
+% Graphics
+%%%%%%%%%%%%%%%%
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}

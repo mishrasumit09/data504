@@ -1,0 +1,1782 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.7)  28 OCT 2020 08:56
+entering extended mode
+**./Topic01(2020).tex
+(Topic01(2020).tex
+LaTeX2e <2019-10-01> patch level 3
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamer.cls"
+Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasemodes.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count80
+)
+\beamer@tempbox=\box27
+\beamer@tempcount=\count81
+\c@beamerpauses=\count82
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasedecode.sty"
+\beamer@slideinframe=\count83
+\beamer@minimum=\count84
+\beamer@decode@box=\box28
+)
+\beamer@commentbox=\box29
+\beamer@modecount=\count85
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\headdp=\dimen102
+\footheight=\dimen103
+\sidebarheight=\dimen104
+\beamer@tempdim=\dimen105
+\beamer@finalheight=\dimen106
+\beamer@animht=\dimen107
+\beamer@animdp=\dimen108
+\beamer@animwd=\dimen109
+\beamer@leftmargin=\dimen110
+\beamer@rightmargin=\dimen111
+\beamer@leftsidebar=\dimen112
+\beamer@rightsidebar=\dimen113
+\beamer@boxsize=\dimen114
+\beamer@vboxoffset=\dimen115
+\beamer@descdefault=\dimen116
+\beamer@descriptionwidth=\dimen117
+\beamer@lastskip=\skip41
+\beamer@areabox=\box30
+\beamer@animcurrent=\box31
+\beamer@animshowbox=\box32
+\beamer@sectionbox=\box33
+\beamer@logobox=\box34
+\beamer@linebox=\box35
+\beamer@sectioncount=\count86
+\beamer@subsubsectionmax=\count87
+\beamer@subsectionmax=\count88
+\beamer@sectionmax=\count89
+\beamer@totalheads=\count90
+\beamer@headcounter=\count91
+\beamer@partstartpage=\count92
+\beamer@sectionstartpage=\count93
+\beamer@subsectionstartpage=\count94
+\beamer@animationtempa=\count95
+\beamer@animationtempb=\count96
+\beamer@xpos=\count97
+\beamer@ypos=\count98
+\beamer@ypos@offset=\count99
+\beamer@showpartnumber=\count100
+\beamer@currentsubsection=\count101
+\beamer@coveringdepth=\count102
+\beamer@sectionadjust=\count103
+\beamer@tocsectionnumber=\count104
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip42
+\beamer@paperheight=\skip43
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+
+Class beamer Warning: This option is obsolete. Use beamer option ``show notes''
+ instead. on input line 336.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
+File: size11.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen128
+\pgfutil@tempdimb=\dimen129
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
+\pgfutil@abb=\box36
+("C:\Program Files\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrcs.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf\pgf.revision.tex")
+Package: pgfrcs 2019/12/21 v3.1.5a (3.1.5a)
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+Package: pgfsys 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen130
+\pgf@y=\dimen131
+\pgf@xa=\dimen132
+\pgf@ya=\dimen133
+\pgf@xb=\dimen134
+\pgf@yb=\dimen135
+\pgf@xc=\dimen136
+\pgf@yc=\dimen137
+\pgf@xd=\dimen138
+\pgf@yd=\dimen139
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count108
+\c@pgf@countb=\count109
+\c@pgf@countc=\count110
+\c@pgf@countd=\count111
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+\pgf@sys@id@count=\count112
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
+File: pgf.cfg 2019/12/21 v3.1.5a (3.1.5a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2019/12/21 v3.1.5a (3.1.5a)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfsyssoftpath@smallbuffer@items=\count113
+\pgfsyssoftpath@bigbuffer@items=\count114
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+Package: pgfcore 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen140
+\pgfmath@count=\count115
+\pgfmath@box=\box37
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count116
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@picminx=\dimen141
+\pgf@picmaxx=\dimen142
+\pgf@picminy=\dimen143
+\pgf@picmaxy=\dimen144
+\pgf@pathminx=\dimen145
+\pgf@pathmaxx=\dimen146
+\pgf@pathminy=\dimen147
+\pgf@pathmaxy=\dimen148
+\pgf@xx=\dimen149
+\pgf@xy=\dimen150
+\pgf@yx=\dimen151
+\pgf@yy=\dimen152
+\pgf@zx=\dimen153
+\pgf@zy=\dimen154
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@path@lastx=\dimen155
+\pgf@path@lasty=\dimen156
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@shorten@end@additional=\dimen157
+\pgf@shorten@start@additional=\dimen158
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfpic=\box38
+\pgf@hbox=\box39
+\pgf@layerbox@main=\box40
+\pgf@picture@serial@count=\count117
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgflinewidth=\dimen159
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@pt@x=\dimen160
+\pgf@pt@y=\dimen161
+\pgf@pt@temp=\dimen162
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfarrowsep=\dimen163
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@max=\dimen164
+\pgf@sys@shading@range@num=\count118
+\pgf@shadingcount=\count119
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfexternal@startupbox=\box41
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+))) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\xxcolor.sty"
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count120
+\XC@countmixins=\count121
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pdfescape\pdfescape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2019/12/15 v1.9 Color options for hyperref/bookmark (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hycolor\xcolor-patch.sty"
+Package: xcolor-patch 2019/12/15 xcolor patch
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\hopatch.sty"
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/letltxmacro\letltxmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen165
+\Hy@linkcounter=\count122
+\Hy@pagecounter=\count123
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/intcalc\intcalc.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count124
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4409.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4409.
+Package hyperref Info: Option `implicit' set `false' on input line 4409.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count125
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5147.
+\XeTeXLinkMargin=\dimen166
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/bigintcalc\bigintcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count126
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
+Package hyperref Info: Hyper figures OFF on input line 6418.
+Package hyperref Info: Link nesting OFF on input line 6423.
+Package hyperref Info: Hyper index ON on input line 6426.
+Package hyperref Info: backreferencing OFF on input line 6433.
+Package hyperref Info: Link coloring OFF on input line 6438.
+Package hyperref Info: Link coloring with OCG OFF on input line 6443.
+Package hyperref Info: PDF/A mode OFF on input line 6448.
+LaTeX Info: Redefining \ref on input line 6488.
+LaTeX Info: Redefining \pageref on input line 6492.
+\Hy@abspage=\count127
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2019/11/10 v7.00c Hyperref driver for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/atveryend\atveryend.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count128
+\c@bookmark@seq@number=\count129
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/uniquecounter\uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaserequires.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasecompatibility.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasefont.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/sansmathaccent\sansmathaccent.sty"
+Package: sansmathaccent 2013/03/28
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/filehook\filehook.sty"
+Package: filehook 2019/10/03 v0.6 Hooks for input files
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetranslator.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator.sty"
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasemisc.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetwoscreens.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseoverlay.sty"
+\beamer@argscount=\count130
+\beamer@lastskipcover=\skip44
+\beamer@trivlistdepth=\count131
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetitle.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasesection.sty"
+\c@lecture=\count132
+\c@part=\count133
+\c@section=\count134
+\c@subsection=\count135
+\c@subsubsection=\count136
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseframe.sty"
+\beamer@framebox=\box42
+\beamer@frametitlebox=\box43
+\beamer@zoombox=\box44
+\beamer@zoomcount=\count137
+\beamer@zoomframecount=\count138
+\beamer@frametextheight=\dimen169
+\c@subsectionslide=\count139
+\beamer@frametopskip=\skip45
+\beamer@framebottomskip=\skip46
+\beamer@frametopskipautobreak=\skip47
+\beamer@framebottomskipautobreak=\skip48
+\beamer@envbody=\toks27
+\framewidth=\dimen170
+\c@framenumber=\count140
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseverbatim.sty"
+\beamer@verbatimfileout=\write4
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseframesize.sty"
+\beamer@splitbox=\box45
+\beamer@autobreakcount=\count141
+\beamer@autobreaklastheight=\dimen171
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseframecomponents.sty"
+\beamer@footins=\box46
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasecolor.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasenotes.sty"
+\beamer@frameboxcopy=\box47
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetoc.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetemplates.sty"
+\beamer@sbttoks=\toks30
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseauxtemplates.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaseboxes.sty"
+\bmb@box=\box48
+\bmb@colorbox=\box49
+\bmb@boxshadow=\box50
+\bmb@boxshadowball=\box51
+\bmb@boxshadowballlarge=\box52
+\bmb@temp=\dimen172
+\bmb@dima=\dimen173
+\bmb@dimb=\dimen174
+\bmb@prevheight=\dimen175
+)
+\beamer@blockheadheight=\dimen176
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbaselocalstructure.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\enumerate.sty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
+)
+\c@figure=\count142
+\c@table=\count143
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasenavigation.sty"
+\beamer@section@min@dim=\dimen177
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasetheorems.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen178
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count144
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count145
+\leftroot@=\count146
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count147
+\DOTSCASE@=\count148
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count149
+\c@MaxMatrixCols=\count150
+\dotsspace@=\muskip11
+\c@parentequation=\count151
+\dspbrk@lvl=\count152
+\tag@help=\toks33
+\row@=\count153
+\column@=\count154
+\maxfields@=\count155
+\andhelp@=\toks34
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks35
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks42
+)
+\c@theorem=\count156
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerbasethemes.sty"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerthemedefault.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerfontthemedefault.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamercolorthemedefault.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerinnerthemedefault.sty"
+\beamer@dima=\dimen187
+\beamer@dimb=\dimen188
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerouterthemedefault.sty")))
+("C:\Program Files\MiKTeX 2.9\tex/latex/lato\lato.sty"
+Package: lato 2019/06/20 Style file for Lato.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/fontaxes\fontaxes.sty"
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \scshape on input line 37.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
+)
+\XKV@depth=\count157
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\trimclip.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box55
+)
+\tc@llx=\dimen189
+\tc@lly=\dimen190
+\tc@urx=\dimen191
+\tc@ury=\dimen192
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen193
+\adjbox@Height=\dimen194
+\adjbox@Depth=\dimen195
+\adjbox@Totalheight=\dimen196
+\adjbox@pwidth=\dimen197
+\adjbox@pheight=\dimen198
+\adjbox@pdepth=\dimen199
+\adjbox@ptotalheight=\dimen256
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count158
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/varwidth\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count159
+\@vwid@loff=\dimen257
+\@vwid@roff=\dimen258
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/threeparttable\threeparttable.sty"
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box57
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip57
+\bibsep=\skip58
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count160
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count161
+\float@exts=\toks45
+\float@box=\box58
+\@float@everytoks=\toks46
+\@floatcapt=\box59
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tabls\tabls.sty"
+\tablinesep=\dimen259
+\arraylinesep=\dimen260
+\extrarulesep=\dimen261
+\@arstdepth=\dimen262
+\@arstheight=\dimen263
+\@skip@bove=\dimen264
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen265
+\calc@Bdimen=\dimen266
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count164
+\calc@Cskip=\skip61
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen267
+\captionmargin@=\dimen268
+\captionwidth=\dimen269
+\caption@tempdima=\dimen270
+\caption@indent=\dimen271
+\caption@parindent=\dimen272
+\caption@hangindent=\dimen273
+Package caption Info: beamer document class detected.
+)
+\c@caption@flags=\count165
+\c@continuedfloat=\count166
+Package caption Info: beamer document class.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: threeparttable package is loaded.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen274
+\lightrulewidth=\dimen275
+\cmidrulewidth=\dimen276
+\belowrulesep=\dimen277
+\belowbottomsep=\dimen278
+\aboverulesep=\dimen279
+\abovetopsep=\dimen280
+\cmidrulesep=\dimen281
+\cmidrulekern=\dimen282
+\defaultaddspace=\dimen283
+\@cmidla=\count167
+\@cmidlb=\count168
+\@aboverulesep=\dimen284
+\@belowrulesep=\dimen285
+\@thisruleclass=\count169
+\@lastruleclass=\count170
+\@thisrulewidth=\dimen286
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/12/08 3.37 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/12/08 3.37 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/12/08 3.37 Babel common definitions
+\babel@savecnt=\count171
+\U@D=\dimen287
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
+LaTeX Info: Redefining \textlatin on input line 2206.
+\bbl@dirlevel=\count172
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language72) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language72) on input line 108.
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks47
+\inpenc@posthook=\toks48
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip62
+\subfigcapskip=\skip63
+\subfigcaptopadj=\dimen288
+\subfigbottomskip=\skip64
+\subfigcapmargin=\dimen289
+\subfiglabelskip=\skip65
+\c@subfigure=\count173
+\c@lofdepth=\count174
+\c@subtable=\count175
+\c@lotdepth=\count176
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.cfg")
+\subfig@top=\skip66
+\subfig@bottom=\skip67
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty"
+Package: pgf 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfnodeparttextbox=\box60
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@nodesepstart=\dimen290
+\pgf@nodesepend=\dimen291
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2019/12/21 v3.1.5a (3.1.5a)
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
+Package: pgffor 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
+\pgffor@iter=\dimen292
+\pgffor@skip=\dimen293
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
+Package: tikz 2019/12/21 v3.1.5a (3.1.5a)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.
+code.tex"
+File: pgflibraryplothandlers.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgf@plot@mark@count=\count177
+\pgfplotmarksize=\dimen294
+)
+\tikz@lastx=\dimen295
+\tikz@lasty=\dimen296
+\tikz@lastxsaved=\dimen297
+\tikz@lastysaved=\dimen298
+\tikz@lastmovetox=\dimen299
+\tikz@lastmovetoy=\dimen300
+\tikzleveldistance=\dimen301
+\tikzsiblingdistance=\dimen302
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count178
+\tikznumberofchildren=\count179
+\tikznumberofcurrentchild=\count180
+\tikz@fig@count=\count181
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+\pgfmatrixcurrentrow=\count182
+\pgfmatrixcurrentcolumn=\count183
+\pgf@matrix@numberofcolumns=\count184
+)
+\tikz@expandcount=\count185
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
+librarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2019/12/21 v3.1.5a (3.1.5a)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen303
+\ar@mcellbox=\box65
+\extrarowheight=\dimen304
+\NC@list=\toks51
+\extratabsurround=\skip68
+\backup@length=\skip69
+
+
+LaTeX Warning: Command \@xhline  has changed.
+               Check if current package is valid.
+
+\ar@cellbox=\box66
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\dcolumn.sty"
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count186
+\multirow@dima=\skip71
+\bigstrutjot=\dimen305
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/markdown\markdown.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.sty"
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count187
+\FV@InFile=\read2
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count188
+\FV@StepNumber=\count189
+\FV@OutFile=\write5
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/csvsimple\csvsimple.sty"
+Package: csvsimple 2019/04/09 version 1.21 LaTeX CSV file processing
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+\csv@file=\read3
+\c@csvinputline=\count190
+\c@csvrow=\count191
+\c@csvcol=\count192
+\csv@out=\write6
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/gobble\gobble.sty"
+Package: gobble 2019/01/04 v0.2 Provides more gobble macros
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/gobble\gobble.tex"))
+("C:\Program Files\MiKTeX 2.9\tex/generic/markdown\markdown.tex"
+\markdownFrozenCacheCounter=\count193
+\markdownInputFileStream=\read4
+\markdownOutputFileStream=\write7
+(l.526) markdown.tex info: Using mode 0: Shell escape via write18.
+)
+Package: markdown 2020/09/14 v2.9.0 markdown renderer
+\markdownLaTeXCitationsCounter=\count194
+\markdownLaTeXRowCounter=\count195
+\markdownLaTeXRowTotal=\count196
+\markdownLaTeXColumnCounter=\count197
+\markdownLaTeXColumnTotal=\count198
+\markdownLaTeXTable=\toks52
+\markdownLaTeXTableAlignment=\toks53
+\markdownLaTeXTableEnd=\toks54
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2019-11-07 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
+Package: expl3 2019-11-07 L3 programming layer (code)
+\c_max_int=\count199
+\l_tmpa_int=\count266
+\l_tmpb_int=\count267
+\g_tmpa_int=\count268
+\g_tmpb_int=\count269
+\l__seq_internal_a_int=\count270
+\l__seq_internal_b_int=\count271
+\g__kernel_prg_map_int=\count272
+\c__ior_term_noprompt_ior=\count273
+\c_log_iow=\count274
+\l_iow_line_count_int=\count275
+\l__iow_line_target_int=\count276
+\l__iow_one_indent_int=\count277
+\l__iow_indent_int=\count278
+\c_zero_dim=\dimen306
+\c_max_dim=\dimen307
+\l_tmpa_dim=\dimen308
+\l_tmpb_dim=\dimen309
+\g_tmpa_dim=\dimen310
+\g_tmpb_dim=\dimen311
+\c_zero_skip=\skip72
+\c_max_skip=\skip73
+\l_tmpa_skip=\skip74
+\l_tmpb_skip=\skip75
+\g_tmpa_skip=\skip76
+\g_tmpb_skip=\skip77
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count279
+\l__intarray_loop_int=\count280
+\c__intarray_sp_dim=\dimen312
+\g__intarray_font_int=\count281
+\c__fp_leading_shift_int=\count282
+\c__fp_middle_shift_int=\count283
+\c__fp_trailing_shift_int=\count284
+\c__fp_big_leading_shift_int=\count285
+\c__fp_big_middle_shift_int=\count286
+\c__fp_big_trailing_shift_int=\count287
+\c__fp_Bigg_leading_shift_int=\count288
+\c__fp_Bigg_middle_shift_int=\count289
+\c__fp_Bigg_trailing_shift_int=\count290
+\c__kernel_randint_max_int=\count291
+\g__fp_array_int=\count292
+\l__fp_array_loop_int=\count293
+\l__sort_length_int=\count294
+\l__sort_min_int=\count295
+\l__sort_top_int=\count296
+\l__sort_max_int=\count297
+\l__sort_true_max_int=\count298
+\l__sort_block_int=\count299
+\l__sort_begin_int=\count300
+\l__sort_end_int=\count301
+\l__sort_A_int=\count302
+\l__sort_B_int=\count303
+\l__sort_C_int=\count304
+\l__str_internal_int=\count305
+\c__str_replacement_char_int=\count306
+\l__tl_analysis_normal_int=\count307
+\l__tl_analysis_index_int=\count308
+\l__tl_analysis_nesting_int=\count309
+\l__tl_analysis_type_int=\count310
+\l__regex_internal_a_int=\count311
+\l__regex_internal_b_int=\count312
+\l__regex_internal_c_int=\count313
+\l__regex_balance_int=\count314
+\l__regex_group_level_int=\count315
+\l__regex_mode_int=\count316
+\c__regex_cs_in_class_mode_int=\count317
+\c__regex_cs_mode_int=\count318
+\l__regex_catcodes_int=\count319
+\l__regex_default_catcodes_int=\count320
+\c__regex_catcode_D_int=\count321
+\c__regex_catcode_S_int=\count322
+\c__regex_catcode_L_int=\count323
+\c__regex_catcode_O_int=\count324
+\c__regex_catcode_A_int=\count325
+\c__regex_all_catcodes_int=\count326
+\l__regex_show_lines_int=\count327
+\l__regex_min_state_int=\count328
+\l__regex_max_state_int=\count329
+\l__regex_left_state_int=\count330
+\l__regex_right_state_int=\count331
+\l__regex_capturing_group_int=\count332
+\l__regex_min_pos_int=\count333
+\l__regex_max_pos_int=\count334
+\l__regex_curr_pos_int=\count335
+\l__regex_start_pos_int=\count336
+\l__regex_success_pos_int=\count337
+\l__regex_curr_char_int=\count338
+\l__regex_curr_catcode_int=\count339
+\l__regex_last_char_int=\count340
+\l__regex_case_changed_char_int=\count341
+\l__regex_curr_state_int=\count342
+\l__regex_step_int=\count343
+\l__regex_min_active_int=\count344
+\l__regex_max_active_int=\count345
+\l__regex_replacement_csnames_int=\count346
+\l__regex_match_count_int=\count347
+\l__regex_min_submatch_int=\count348
+\l__regex_submatch_int=\count349
+\l__regex_zeroth_submatch_int=\count350
+\g__regex_trace_regex_int=\count351
+\c_empty_box=\box68
+\l_tmpa_box=\box69
+\l_tmpb_box=\box70
+\g_tmpa_box=\box71
+\g_tmpb_box=\box72
+\l__box_top_dim=\dimen313
+\l__box_bottom_dim=\dimen314
+\l__box_left_dim=\dimen315
+\l__box_right_dim=\dimen316
+\l__box_top_new_dim=\dimen317
+\l__box_bottom_new_dim=\dimen318
+\l__box_left_new_dim=\dimen319
+\l__box_right_new_dim=\dimen320
+\l__box_internal_box=\box73
+\l__coffin_internal_box=\box74
+\l__coffin_internal_dim=\dimen321
+\l__coffin_offset_x_dim=\dimen322
+\l__coffin_offset_y_dim=\dimen323
+\l__coffin_x_dim=\dimen324
+\l__coffin_y_dim=\dimen325
+\l__coffin_x_prime_dim=\dimen326
+\l__coffin_y_prime_dim=\dimen327
+\c_empty_coffin=\box75
+\l__coffin_aligned_coffin=\box76
+\l__coffin_aligned_internal_coffin=\box77
+\l_tmpa_coffin=\box78
+\l_tmpb_coffin=\box79
+\g_tmpa_coffin=\box80
+\g_tmpb_coffin=\box81
+\l__coffin_bounding_shift_dim=\dimen328
+\l__coffin_left_corner_dim=\dimen329
+\l__coffin_right_corner_dim=\dimen330
+\l__coffin_bottom_corner_dim=\dimen331
+\l__coffin_top_corner_dim=\dimen332
+\l__coffin_scaled_total_height_dim=\dimen333
+\l__coffin_scaled_width_dim=\dimen334
+\c__coffin_empty_coffin=\box82
+\l__coffin_display_coffin=\box83
+\l__coffin_display_coord_coffin=\box84
+\l__coffin_display_pole_coffin=\box85
+\l__coffin_display_offset_dim=\dimen335
+\l__coffin_display_x_dim=\dimen336
+\l__coffin_display_y_dim=\dimen337
+\g__char_data_ior=\read5
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3deprecation.def"
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count352
+\l__pdf_internal_box=\box86
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2019-10-11 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count353
+\g__xparse_grabber_int=\count354
+\l__xparse_m_args_int=\count355
+\l__xparse_v_nesting_int=\count356
+)
+Package: siunitx 2019/10/10 v2.7t A comprehensive (SI) units package
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2019-10-11 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box87
+\l__siunitx_tmp_dim=\dimen338
+\l__siunitx_tmp_int=\count357
+\l__siunitx_number_mantissa_length_int=\count358
+\l__siunitx_number_uncert_length_int=\count359
+\l__siunitx_round_int=\count360
+\l__siunitx_process_decimal_int=\count361
+\l__siunitx_process_uncertainty_int=\count362
+\l__siunitx_process_fixed_int=\count363
+\l__siunitx_process_integer_min_int=\count364
+\l__siunitx_process_precision_int=\count365
+\l__siunitx_group_min_int=\count366
+\l__siunitx_angle_marker_box=\box88
+\l__siunitx_angle_unit_box=\box89
+\l__siunitx_angle_marker_dim=\dimen339
+\l__siunitx_angle_unit_dim=\dimen340
+\l__siunitx_unit_int=\count367
+\l__siunitx_unit_denominator_int=\count368
+\l__siunitx_unit_numerator_int=\count369
+\l__siunitx_unit_prefix_int=\count370
+\l__siunitx_unit_prefix_base_int=\count371
+\l__siunitx_unit_prefix_gram_int=\count372
+\l__siunitx_number_product_int=\count373
+\c__siunitx_one_fill_skip=\skip78
+\l__siunitx_table_unit_align_skip=\skip79
+\l__siunitx_table_exponent_dim=\dimen341
+\l__siunitx_table_integer_dim=\dimen342
+\l__siunitx_table_mantissa_dim=\dimen343
+\l__siunitx_table_marker_dim=\dimen344
+\l__siunitx_table_result_dim=\dimen345
+\l__siunitx_table_uncert_dim=\dimen346
+\l__siunitx_table_fill_pre_dim=\dimen347
+\l__siunitx_table_fill_post_dim=\dimen348
+\l__siunitx_table_fill_mid_dim=\dimen349
+\l__siunitx_table_pre_box=\box90
+\l__siunitx_table_post_box=\box91
+\l__siunitx_table_mantissa_box=\box92
+\l__siunitx_table_result_box=\box93
+\l__siunitx_table_number_align_skip=\skip80
+\l__siunitx_table_text_align_skip=\skip81
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tfrupee\tfrupee.sty"
+Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
+Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
+. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks55
+\minrowclearance=\skip82
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty"
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks56
+\verbatim@line=\toks57
+\verbatim@in@stream=\read6
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box94
+\tcb@upperbox=\box95
+\tcb@lowerbox=\box96
+\tcb@phantombox=\box97
+\c@tcbbreakpart=\count374
+\c@tcblayer=\count375
+\tcolorbox@number=\count376
+\tcb@temp=\box98
+\tcb@temp=\box99
+\tcb@temp=\box100
+\tcb@temp=\box101
+\tcb@out=\write8
+\tcb@record@out=\write9
+)
+(Topic01(2020).aux)
+\openout1 = `Topic01(2020).aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Trying to load font information for OT1+lato-TLF on input l
+ine 185.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lato\ot1lato-tlf.fd"
+File: OT1lato-TLF.fd 2019/06/24 Font definitions for OT1/lato-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 185.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(10.95003pt, 433.34402pt, 10.95003pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=256.0748pt
+* \textwidth=433.34402pt
+* \textheight=227.62207pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count377
+\scratchdimen=\dimen350
+\scratchbox=\box102
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen351
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks59
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+)
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box103
+Package hyperref Info: Link coloring OFF on input line 185.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count383
+)
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
+
+(Topic01(2020).out) (Topic01(2020).out)
+\@outlinefile=\write10
+\openout10 = `Topic01(2020).out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 185.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 185.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 185.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 185.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 185.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 185.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 185.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 185.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 185.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 185.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+85.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+185.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 185.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-
+English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-bibliography-dict
+ionary-English.dict"
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-environment-dicti
+onary-English.dict"
+Dictionary: translator-environment-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-months-dictionary
+-English.dict"
+Dictionary: translator-months-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-numbers-dictionar
+y-English.dict"
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-theorem-dictionar
+y-English.dict"
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+\c@mv@tabular=\count384
+\c@mv@boldtabular=\count385
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+(Topic01(2020).nav)
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 185.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 185
+.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 185
+.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 185.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/sansmathaccent\ot1mathkerncmss.fd"
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/bx/n' in size <8> not available
+(Font)              Font shape `OT1/lato-TLF/b/n' tried instead on input line 1
+88.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 188.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 4.0pt on input line 188.
+
+[1
+
+{C:/Users/mishr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+]
+[3
+
+]
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 220.
+ [4
+
+] [5
+
+] [6
+
+] [7
+
+]
+Overfull \hbox (0.59306pt too wide) in paragraph at lines 312--312
+ [] 
+ []
+
+[8
+
+]
+Overfull \hbox (0.59306pt too wide) in paragraph at lines 312--312
+ [] 
+ []
+
+[9
+
+]
+Overfull \hbox (0.59306pt too wide) in paragraph at lines 312--312
+ [] 
+ []
+
+[10
+
+]
+Overfull \hbox (0.59306pt too wide) in paragraph at lines 312--312
+ [] 
+ []
+
+[11
+
+] [12
+
+]
+<graphs/variables.pdf, id=94, 303.1325pt x 108.405pt>
+File: graphs/variables.pdf Graphic file (type pdf)
+<use graphs/variables.pdf>
+Package pdftex.def Info: graphs/variables.pdf  used on input line 330.
+(pdftex.def)             Requested size: 172.78732pt x 61.79147pt.
+ [13
+
+ <./graphs/variables.pdf>]
+<graphs/pop_change_v_med_income.pdf, id=107, 505.89pt x 252.945pt>
+File: graphs/pop_change_v_med_income.pdf Graphic file (type pdf)
+<use graphs/pop_change_v_med_income.pdf>
+Package pdftex.def Info: graphs/pop_change_v_med_income.pdf  used on input line
+ 337.
+(pdftex.def)             Requested size: 404.71254pt x 202.35626pt.
+ [14
+
+ <./graphs/pop_change_v_med_income.pdf>] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+]
+<graphs/popToSampleGraduates.pdf, id=152, 289.08pt x 151.56625pt>
+File: graphs/popToSampleGraduates.pdf Graphic file (type pdf)
+<use graphs/popToSampleGraduates.pdf>
+Package pdftex.def Info: graphs/popToSampleGraduates.pdf  used on input line 38
+1.
+(pdftex.def)             Requested size: 231.2643pt x 121.25316pt.
+ [20
+
+ <./graphs/popToSampleGraduates.pdf>]
+LaTeX Font Info:    Font shape `OT1/lato-TLF/bx/n' in size <10.95> not availabl
+e
+(Font)              Font shape `OT1/lato-TLF/b/n' tried instead on input line 3
+91.
+LaTeX Font Info:    Font shape `OT1/lato-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 391.
+<graphs/popToSubsampleGraduates.pdf, id=169, 289.08pt x 151.56625pt>
+File: graphs/popToSubsampleGraduates.pdf Graphic file (type pdf)
+<use graphs/popToSubsampleGraduates.pdf>
+Package pdftex.def Info: graphs/popToSubsampleGraduates.pdf  used on input line
+ 391.
+(pdftex.def)             Requested size: 231.2643pt x 121.25316pt.
+ [21
+
+ <./graphs/popToSubsampleGraduates.pdf>]
+<graphs/surveySample.pdf, id=187, 289.08pt x 151.56625pt>
+File: graphs/surveySample.pdf Graphic file (type pdf)
+<use graphs/surveySample.pdf>
+Package pdftex.def Info: graphs/surveySample.pdf  used on input line 412.
+(pdftex.def)             Requested size: 231.2643pt x 121.25316pt.
+
+Overfull \vbox (3.8707pt too high) detected at line 412
+ []
+
+[22
+
+ <./graphs/surveySample.pdf>]
+File: graphs/surveySample.pdf Graphic file (type pdf)
+<use graphs/surveySample.pdf>
+Package pdftex.def Info: graphs/surveySample.pdf  used on input line 412.
+(pdftex.def)             Requested size: 231.2643pt x 121.25316pt.
+
+Overfull \vbox (3.8707pt too high) detected at line 412
+ []
+
+[23
+
+]
+File: graphs/surveySample.pdf Graphic file (type pdf)
+<use graphs/surveySample.pdf>
+Package pdftex.def Info: graphs/surveySample.pdf  used on input line 412.
+(pdftex.def)             Requested size: 231.2643pt x 121.25316pt.
+
+Overfull \vbox (3.8707pt too high) detected at line 412
+ []
+
+[24
+
+]
+<graphs/simple_stratified.pdf, id=215, 533.995pt x 542.025pt>
+File: graphs/simple_stratified.pdf Graphic file (type pdf)
+<use graphs/simple_stratified.pdf>
+Package pdftex.def Info: graphs/simple_stratified.pdf  used on input line 422.
+(pdftex.def)             Requested size: 160.19974pt x 162.60875pt.
+
+Overfull \vbox (8.93942pt too high) detected at line 422
+ []
+
+[25
+
+ <./graphs/simple_stratified.pdf>]
+LaTeX Font Info:    Font shape `OT1/lato-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 443.
+ [26
+
+] [27
+
+] [28
+
+] [29
+
+]
+<graphs/cluster_multistage.pdf, id=253, 533.995pt x 542.025pt>
+File: graphs/cluster_multistage.pdf Graphic file (type pdf)
+<use graphs/cluster_multistage.pdf>
+Package pdftex.def Info: graphs/cluster_multistage.pdf  used on input line 499.
+
+(pdftex.def)             Requested size: 186.90105pt x 189.71158pt.
+ [30
+
+ <./graphs/cluster_multistage.pdf>]
+\tf@nav=\write11
+\openout11 = `Topic01(2020).nav'.
+
+\tf@toc=\write12
+\openout12 = `Topic01(2020).toc'.
+
+\tf@snm=\write13
+\openout13 = `Topic01(2020).snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
+ (Topic01(2020).aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
+Package rerunfilecheck Info: File `Topic01(2020).out' has not changed.
+(rerunfilecheck)             Checksum: B9D804A718F0032102C5CA4BD94DF5F6;181.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 39892 strings out of 492483
+ 807198 string characters out of 3131040
+ 852815 words of memory out of 3000000
+ 43451 multiletter control sequences out of 15000+200000
+ 580546 words of font info for 83 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 58i,11n,96p,808b,933s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lato/a_vc7epu.enc}{C:/Program Fi
+les/MiKTeX 2.9/fonts/enc/dvips/lato/a_y72t7m.enc}<C:/Program Files/MiKTeX 2.9/f
+onts/type1/typoland/lato/Lato-Bold.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/typoland/lato/Lato-Italic.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/typolan
+d/lato/Lato-Regular.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb>
+Output written on Topic01(2020).pdf (30 pages, 424912 bytes).
+PDF statistics:
+ 305 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+

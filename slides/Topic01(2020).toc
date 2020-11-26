@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Case: Stents to prevent strokes}{3}{0}{1}
+\beamer@sectionintoc {2}{Data Basics}{7}{0}{2}
+\beamer@sectionintoc {3}{Sampling Principles and Strategies}{18}{0}{3}

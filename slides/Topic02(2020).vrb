@@ -1,0 +1,14 @@
+\frametitle{Bar plots with two variables}
+
+\begin{itemize}
+
+\item \hl{Stacked bar plot:} Graphical display of contingency table information,
+for counts.
+
+\item \hl{Side-by-side bar plot:} Displays the same information by placing bars
+next to, instead of on top of, each other.
+
+\item \hl{Standardized stacked bar plot}: Graphical display of contingency table
+information, for proportions.
+
+\end{itemize}
