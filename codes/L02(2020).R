@@ -124,6 +124,7 @@ unique(movieDB, by = "director")
 ans <- flights[origin == "JFK" & month == 6L,
                .(m_arr = mean(arr_delay), m_dep = mean(dep_delay))]
 
+# number of flights that started from JFK
 ans <- flights[origin == "JFK" & month == 6L, length(dest)]
 
 # you can get the number of observations by
