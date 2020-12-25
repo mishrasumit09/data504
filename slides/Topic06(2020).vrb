@@ -1,0 +1,32 @@
+\frametitle{Finding areas under the chi-square curve (one more)}
+
+\pq{Estimate the shaded area (above 30) under the $\chi^2$ curve with $df = 10$.}
+
+\twocol{0.6}{0.4}{
+\begin{center}
+\includegraphics[width=0.67\textwidth]{graphs/above30WithDF10}
+\end{center}
+}
+{
+{\small
+\begin{enumerate}[(a)]
+\setlength{\itemsep}{0in}
+\item greater than 0.3
+\item between 0.005 and 0.001
+\solnMult{less than 0.001}
+\item greater than 0.001
+\item cannot tell using this table
+\end{enumerate}
+}
+}
+
+\pause
+
+\begin{verbatim}
+
+> pchisq(q = 30, df = 10, lower.tail = FALSE)
+
+[1] 0.0008566412
+
+\end{verbatim}
+

@@ -1,0 +1,1278 @@
+\documentclass[notes,11pt, aspectratio=169]{beamer}
+\usepackage[default]{lato}
+
+
+\input{lec_style.tex}
+
+
+%----------------------------------------------------------------------------------------
+  %	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[DAR]{Data Analytics with R}  % The short title appears at the bottom of 
+\author{Sumit Mishra} % Your name
+\institute[IFMR] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+  Institute for Financial Management and Research, Sri City \\ % Your institution for the title page
+  \medskip
+  \medskip
+  \textbf{Linear Regression} % Your email address
+}
+\date{23 December 2020} % Date, can be changed to a custom date
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  
+ {
+    \addtocounter{framenumber}{-1} 
+    {\removepagenumbers 
+      %\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../OpenIntro_Grid_4_3-01.jpg}}
+      \begin{frame}
+      
+      %\hfill \includegraphics[width=20mm]{../oiLogo_highres}
+      
+      \titlepage
+      
+      \end{frame}
+    }
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Line fitting, residuals, and correlation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Fitting a line to data}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Modeling numerical variables}
+
+In this unit we will learn to quantify the relationship between two numerical variables, as well as modeling numerical response variables using a numerical or categorical explanatory variable.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Asset Poverty vs. Literacy Rate}
+
+The \hl{scatterplot} below shows the relationship between literacy rate in all 640 Indian districts and the \% of households who don't own any assets.
+
+\twocol{0.55}{0.45}{
+\begin{center}
+\includegraphics[width=\textwidth]{graphs/l08f01}
+\end{center}
+}
+{
+\dq{Outcome variable?}
+\pause
+\soln{proportion of households without any assets}
+\pause
+\dq{Predictor variable?}
+\pause
+\soln{literacy proportion}
+\pause
+\dq{Relationship?}
+\pause
+\soln{linear, negative, moderately strong}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Using a linear regression to predict poverty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+The linear model for predicting asset-poverty from literacy rate in India is
+
+\[ \hat{\text{poverty}} = 0.618 - 0.66 * prop_{Lit} \]
+
+The ``hat" is used to signify that this is an estimate.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+
+\dq{The literacy rate in Akola is 77.8\%. What asset-poverty level does the model predict for this district?}
+
+\pause
+
+\[ 0.618 - 0.66 * 0.778 = 0.102 \]
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Eyeballing the line}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Eyeballing the line}
+
+\twocol{0.3}{0.7}
+{
+\pq{Which of the following appears to be the line that best fits the linear relationship between \% in poverty and \% literate? Choose one.}
+\soln{\only<2>{\orange{
+(a)
+}}}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/l08f02}
+\end{center}
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Residuals}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Residuals}
+
+\hl{Residuals} are the leftovers from the model fit: Data = Fit + Residual
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graphs/l08f03}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Residuals (cont.)}
+
+\formula{Residual}{
+Residual is the difference between the observed ($y_i$) and predicted $\hat{y}_i$. 
+\[ e_i = y_i - \hat{y}_i \]
+}
+\vspace{-0.5cm}
+\twocol{0.6}{0.4}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/l08f04}
+\end{center}
+}
+{
+\pause
+\begin{itemize}
+\item \% living in poverty in Akola is 21\% more than predicted.
+\pause
+\item \% living in poverty in Nashik is 4\% less than predicted.
+\end{itemize}
+}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Describing linear relationships with correlation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Quantifying the relationship}
+
+\begin{itemize}
+
+\item \hl{Correlation} describes the strength of the \orange{linear} association between two variables.
+
+\pause
+
+\item It takes values between -1 (perfect negative) and +1 (perfect positive).
+
+\pause
+
+\item A value of 0 indicates no linear association.
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Guessing the correlation}
+
+\pq{Which of the following is the best guess for the correlation between propn in asset poverty and propn literate?}
+\twocol{0.4}{0.6}
+{
+\begin{enumerate}[(a)]
+\item 0.6
+\solnMult{-0.54}
+\item -0.1
+\item 0.02
+\item -1.5
+\end{enumerate}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/l08f05}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Guessing the correlation}
+
+\pq{Which of the following is the best guess for the correlation between propn in asset poverty and propn of SC-ST in a district?}
+
+\twocol{0.4}{0.6}
+{
+\begin{enumerate}[(a)]
+\item 0.1
+\item -0.6
+\item -0.4
+\item 0.9
+\solnMult{0.55}
+\end{enumerate}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/l08f06.pdf}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Assessing the correlation}
+
+\pq{Which of the following is has the strongest correlation, i.e. correlation coefficient closest to +1 or -1?}
+
+\twocol{0.8}{0.2}
+{
+\begin{center}
+\includegraphics[width=0.65\textwidth]{graphs/l08f07}
+\end{center}
+}
+{
+\soln{\only<2>{\orange{
+(b) $\rightarrow$ correlation means \underline{linear} association
+}}}
+}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fitting a line by least squares regression}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{An objective measure for finding the best line}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{An objective measure for finding the best line}
+
+\begin{itemize}
+
+\item We want a line that has small residuals:
+\pause
+\begin{enumerate}
+\item Option 1: Minimize the sum of magnitudes (absolute values) of residuals
+\[ |e_1| + |e_2| + \cdots + |e_n| \]
+\pause
+\item Option 2: Minimize the sum of squared residuals -- \hl{least squares}
+\[ e_1^2 + e_2^2 + \cdots + e_n^2 \]
+\end{enumerate}
+
+\pause
+
+\item Why least squares?
+\pause
+\begin{enumerate}
+\item Most commonly used
+\pause
+\item Easier to compute by hand and using software
+\pause
+\item In many applications, a residual twice as large as another is usually more than twice as bad
+\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{The least squares line}
+
+\[ \mathhl{ \hat{y} = \beta_0 + \beta_1 x } \]
+
+\begin{itemize}
+\item $\hat{y}$: Predicted value of the outcome variable, $y$
+\item $\beta_0$: Intercept, parameter
+\begin{itemize}
+\item $b_0$: Intercept, point estimate
+\end{itemize}
+\item $\beta_1$: Slope, parameter
+\begin{itemize}
+\item $b_1$: Slope, point estimate
+\end{itemize}
+\item $x$: Predictor variable
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Conditions for the least squares line}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Conditions for the least squares line}
+
+\begin{enumerate}
+
+\item Linearity
+
+\pause
+
+\item Nearly normal residuals
+
+\pause
+
+\item Constant variability
+
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Conditions: (1) Linearity}
+
+\begin{itemize}
+
+\item The relationship between the predictor and the outcome variable should be linear. 
+
+\pause
+
+\item Methods for fitting a model to non-linear relationships exist, but are beyond the scope of this class. If this topic is of interest, an \href{http://www.openintro.org/download.php?file=os2_extra_nonlinear_relationships&referrer=/stat/textbook.php}{Online Extra is available on openintro.org} covering new techniques.
+
+\pause
+
+\item Check using a scatterplot of the data, or a \hl{residuals plot}.
+
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{graphs/l08f08}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Anatomy of a residuals plot}
+
+\twocol{0.5}{0.5}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/l08f09}
+\end{center}
+}
+{
+\textcolor{red}{{\LARGE $\blacksquare$}} \hl{Akola:}
+\begin{align*}
+pLit &= 0.778 \qquad pNoAssets = 0.318 \\
+\widehat{pNoAssets} &= 0.619 - 0.664 * 0.778 = 0.102 \\
+e &= pNoAssets - \widehat{pNoAssets} \\
+&= 0.318 - 0.108 = \textcolor{red}{0.217}
+\end{align*}
+$\:$
+\pause
+\textcolor{green}{{\Large $\blacktriangle$}} \hl{Nashik:}
+\begin{align*}
+pLit &= 0.761 \qquad pNoAssets = 0.071 \\
+\widehat{pNoAssets} &= 0.619 - 0.664 * 0.761 = 0.113 \\
+e &= pNoAssets - \widehat{pNoAssets} \\
+&= 0.071 - 0.113 = \textcolor{green}{-0.042}
+\end{align*}
+}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Conditions: (2) Nearly normal residuals}
+
+\begin{itemize}
+
+\item The residuals should be nearly normal.
+
+\pause
+
+\item This condition may not be satisfied when there are unusual observations that don't follow the trend of the rest of the data.
+
+\pause
+
+\item Check using a histogram.
+
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.35\textwidth]{graphs/l08f10}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Conditions: (3) Constant variability}
+
+\twocol{0.5}{0.5}
+{
+\begin{center}
+\includegraphics[width=\textwidth]{graphs/l08f11}
+\end{center}
+}
+{
+\begin{itemize}
+
+\item The variability of points around the least squares line should be roughly constant.
+
+\pause
+
+\item This implies that the variability of residuals around the 0 line should be roughly constant as well.
+
+\pause
+
+\item Also called \hl{homoscedasticity}.
+
+\pause
+
+\item Check using a residuals plot.
+
+\end{itemize}
+}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Checking conditions}
+
+\twocol{0.5}{0.5}
+{
+\pq{What condition is this linear model obviously violating?}
+\begin{enumerate}[(a)]
+\item Constant variability
+\solnMult{Linear relationship}
+\item Normal residuals
+\item No extreme outliers
+\end{enumerate}
+}
+{
+\begin{center}
+\includegraphics[width=0.7\textwidth]{graphs/nonlinear}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Checking conditions}
+
+\twocol{0.5}{0.5}
+{
+\pq{What condition is this linear model obviously violating?}
+\begin{enumerate}[(a)]
+\solnMult{ Constant variability}
+\item Linear relationship
+\item Normal residuals
+\item No extreme outliers
+\end{enumerate}
+}
+{
+\begin{center}
+\includegraphics[width=0.7\textwidth]{graphs/heteroscedastic}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Finding the least squares line}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Given...}
+
+\twocol{0.5}{0.5}
+{
+\begin{center}
+\includegraphics[width=0.7\textwidth]{graphs/l08f01}
+\end{center}
+}
+{
+\begin{tabular}{l r r}
+\hline
+		& propn literate		& propn in poverty \\
+		& $(x)$			& $(y)$ \\
+\hline
+mean	& $\bar{x} = 0.6248 $	& $\bar{y} = 0.2036$  \\
+sd		& $s_x = 0.105$		& $s_y = 0.129$ \\
+\hline
+		& correlation		& $R = -0.54$ \\
+\hline
+\end{tabular}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Interpreting regression model parameter estimates}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Slope}
+
+\formula{Slope}
+{The slope of the regression can be calculated as 
+\[ b_1 = \frac{s_y}{s_x} R \]
+}
+
+\pause
+
+\hl{In context...}
+\[ b_1 = \frac{0.129}{0.105} \times -0.54 = -0.664 \]
+
+\pause
+$\:$ \\
+\hl{Interpretation} \\
+For each additional percentage point in literacy rate, the asset poor rate would be lower on average by 0.66\% points.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Intercept}
+
+\formula{Intercept}
+{The intercept is where the regression line intersects the $y$-axis. The calculation of the intercept uses the fact the a regression line always passes through $(\bar{x},\bar{y})$.
+\[ b_0 = \bar{y} - b_1 \bar{x} \]
+}
+
+\pause
+
+\begin{align*}
+b_0 &= 0.2036 - (-0.664) \times 0.6248 \\
+&= 0.619
+\end{align*}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{}
+
+\pq{Which of the following is the correct interpretation of the intercept?}
+
+\begin{enumerate}[(a)]
+\item For each \% point increase in literacy rate, \% living in poverty is expected to increase on average by 61.9\%.
+\item For each \% point decrease in literacy rate, \% living in poverty is expected to increase on average by 61.9\%.
+\item Having no literate person leads to 61.9\% of households living without any assets.
+\solnMult{Districts with no literate population are expected on average to have 61.9\% of households living in asset-poverty.}
+\item In districts with no literate population \% living in asset-poverty is expected to increase on average by 61.9\%.
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{More on the intercept}
+
+Since there are no districts in the dataset with no literate population, the intercept is of no interest, not very useful, and also not reliable since the predicted value of the intercept is so far from the bulk of the data.
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Regression line}
+
+\[ \widehat{pNoAssets} = 0.619 - 0.664\times pLit \]
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graphs/l08f05}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Recap: Interpreting the slope and the intercept}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Interpretation of slope and intercept}
+
+\twocol{0.5}{0.5}{
+\begin{itemize}
+
+\item \hl{Intercept:} When {$x = 0$}, {$y$} is expected to equal {the intercept}. \\
+
+$\:$ \\
+
+\item \hl{Slope:} For each {unit} in {$x$}, {$y$} is expected to {increase / decrease} on average by {the slope}.
+
+\end{itemize}
+}
+{
+\begin{center}
+\includegraphics[width=\textwidth]{graphs/diagram}
+\end{center}
+}
+
+\vspace{1cm}
+
+\Note{These statements are not causal, unless the study is a randomized controlled experiment.}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Prediction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Prediction}
+
+\begin{itemize}
+
+\item Using the linear model to predict the value of the response variable for a given value of the explanatory variable is called \hl{prediction}, simply by plugging in the value of $x$ in the linear model equation.
+
+\item There will be some uncertainty associated with the predicted value.
+
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{graphs/l08f12}
+\end{center}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Using $R^2$ to describe the strength of a fit}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{$R^2$}
+
+\begin{itemize}
+
+\item The strength of the fit of a linear model is most commonly evaluated using \mathhl{R^2}.
+
+\pause
+
+\item $R^2$ is calculated as the square of the correlation coefficient.
+
+\pause
+
+\item It tells us what percent of variability in the response variable is explained by the model.
+
+\pause
+
+\item The remainder of the variability is explained by variables not included in the model or by inherent randomness in the data.
+
+\pause
+
+\item For the model we've been working with, $R^2 = -0.54^2 = 0.29$.
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Interpretation of $R^2$}
+
+\pq{{\small Which of the below is the correct interpretation of $R = -0.54$, $R^2 = 0.29$?}}
+
+\twocol{0.65}{0.35}{
+\begin{enumerate}[(a)]
+
+\item 29\% of the variability in the \% of literates among the 640 districts is explained by the model.
+
+\solnMult{ 29\% of the variability in the \% of households living in assets poverty among the 640 districts is explained by the model.}
+
+\item 29\% of the time \% literates predict \% living in asset poverty correctly.
+
+\item 71\% of the variability in the \% of households living in poverty among the 640 districts is explained by the model.
+
+\end{enumerate}
+}{
+\begin{center}
+\includegraphics[width=\textwidth]{graphs/l08f01}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Types of outliers in linear regression}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Types of outliers}
+
+\twocol{0.5}{0.5}
+{
+\dq{How do outliers influence the least squares line in this plot?}
+
+To answer this question think of where the regression line would be with and without the outlier(s). Without the outliers the regression line would be steeper, and lie closer to the larger group of observations. With the outliers the line is pulled up and away from some of the observations in the larger group. 
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/out4}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Types of outliers}
+
+\twocol{0.4}{0.6}
+{
+\dq{How do outliers influence the least squares line in this plot?} \\
+\soln{\only<2>{Without the outlier there is no evident relationship between $x$ and $y$.}}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/out5}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Some terminology}
+ 
+\begin{itemize}
+
+\item \hl{Outliers} are points that lie away from the cloud  of points.
+
+\pause
+
+\item Outliers that lie horizontally away from the center of the cloud are called \hl{high leverage} points.
+
+\pause
+
+\item High leverage points that actually influence the \underline{slope} of the regression line are called \hl{influential} points.
+
+\pause
+
+\item In order to determine if a point is influential, visualize the regression line with and without the point. Does the slope of the line change considerably? If so, then the point is influential. If not, then it's not an influential point.
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Influential points}
+
+Data are available on the log of the surface temperature and the log of the light intensity of 47 stars in the star cluster CYG OB1.
+
+\twocol{0.7}{0.3}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/star}
+\end{center}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/cyg}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Types of outliers}
+
+\twocol{0.4}{0.6}
+{
+\pq{Which of the below best describes the outlier?}
+\begin{enumerate}[(a)]
+\item influential
+\solnMult{high leverage}
+\item none of the above
+\item there are no outliers
+\end{enumerate}
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/out6}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Types of outliers}
+
+\twocol{0.4}{0.6}
+{
+\dq{Does this outlier influence the slope of the regression line?}
+\soln{\only<2>{Not much...}}
+
+}
+{
+\begin{center}
+\includegraphics[width=0.75\textwidth]{graphs/out1}
+\end{center}
+}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Recap}
+
+\pq{Which of following is \underline{true}?}
+
+\begin{enumerate}[(a)]
+\item Influential points always change the intercept of the regression line.
+\item Influential points always reduce $R^2$.
+\item It is much more likely for a low leverage point to be influential, than a high leverage point.
+\item When the data set includes an influential point, the relationship between the explanatory variable and the response variable is always nonlinear.
+\solnMult{None of the above.}
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Recap (cont.)}
+
+\vspace{-1cm}
+
+\twocol{0.5}{0.5}
+{
+\begin{center}
+\[ R = 0.08, R^2 = 0.0064 \]
+\includegraphics[width=0.75\textwidth]{graphs/out5-1}
+\end{center}
+}
+{
+\begin{center}
+\[ R = 0.79, R^2 = 0.6241 \]
+\includegraphics[width=0.75\textwidth]{graphs/out5}
+\end{center}
+}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Inference for linear regression}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Understanding regression output from software}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Nature or nurture?}
+
+{\small In 1966 Cyril Burt published a paper called ``The genetic determination of differences in intelligence: A study of monozygotic twins reared apart?" The data consist of IQ scores for [an assumed random sample of] 27 identical twins, one raised by foster parents, the other by the biological parents.}
+
+\begin{center}
+\includegraphics[width=0.55\textwidth]{graphs/twins_IQ}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{}
+
+\pq{Which of the following is \underline{false}?}
+
+{\footnotesize
+\begin{verbatim}
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       9.20760    9.29990   0.990    0.332    
+bioIQ             0.90144    0.09633   9.358  1.2e-09
+
+Residual standard error: 7.729 on 25 degrees of freedom
+Multiple R-squared: 0.7779,	Adjusted R-squared: 0.769 
+F-statistic: 87.56 on 1 and 25 DF,  p-value: 1.204e-09 
+\end{verbatim}
+}
+
+\begin{enumerate}[(a)]
+\item Additional 10 points in the biological twin's IQ is associated with additional 9 points in the foster twin's IQ, on average.
+\solnMult{Roughly 78\% of the foster twins' IQs can be accurately predicted by the model.}
+\item The linear model is $\widehat{fosterIQ} = 9.2 + 0.9 \times bioIQ$.
+\item Foster twins with IQs higher than average IQs tend to have biological twins with higher than average IQs as well.
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Testing for the slope}
+
+\pq{Assuming that these 27 twins comprise a representative sample of all twins separated at birth, we would like to test if these data provide convincing evidence that the IQ of the biological twin is a significant predictor of IQ of the foster twin. What are the appropriate hypotheses?}
+
+\begin{enumerate}[(a)]
+\item \mathhl{H_0:} $b_0 = 0$; \mathhl{H_A:} $b_0 \ne 0$ 
+\item \mathhl{H_0:} $\beta_0 = 0$; \mathhl{H_A:} $\beta_0 \ne 0$ 
+\item \mathhl{H_0:} $b_1 = 0$; \mathhl{H_A:} $b_1 \ne 0$ 
+\solnMult{ \mathhl{H_0:} $\beta_1 = 0$; \mathhl{H_A:} $\beta_1 \ne 0$ }
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Testing for the slope (cont.)}
+
+{\footnotesize
+\begin{center}
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & Std. Error & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+(Intercept) & 9.2076 & 9.2999 & 0.99 & 0.3316 \\ 
+  bioIQ & 0.9014 & 0.0963 & 9.36 & 0.0000 \\ 
+   \hline
+\end{tabular}
+\end{center}
+}
+
+\pause
+
+\begin{itemize}
+
+\item We always use a $t$-test in inference for regression. $\:$ \\
+
+\pause
+
+\Remember{Test statistic, $T = \frac{point~estimate - null~value}{SE}$}
+
+\pause
+
+\item Point estimate = $b_1$ is the observed slope.
+
+\pause
+
+\item $SE_{b_1}$ is the standard error associated with the slope.
+
+\pause
+
+\item Degrees of freedom associated with the slope is $df = n - 2$, where $n$ is the sample size. $\:$ \\
+\pause
+\Remember{We lose 1 degree of freedom for each parameter we estimate, and in simple linear regression we estimate 2 parameters, $\beta_0$ and $\beta_1$.}
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Testing for the slope (cont.)}
+
+{\small
+\begin{center}
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & Std. Error & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+(Intercept) &  9.2076 & 9.2999 & 0.99 & 0.3316 \\ 
+  bioIQ & \orange{0.9014}  &   \green{0.0963} & \orange{9.36} & \textcolor{blue}{0.0000} \\ 
+   \hline
+\end{tabular}
+\end{center}
+}
+
+\pause
+
+\begin{eqnarray*}
+T &=& \frac{\orange{0.9014} - 0}{\green{0.0963}} = \orange{9.36} \\
+\pause
+df &=& 27 - 2 = 25 \\
+\pause
+p-value &=& P(|T| > \orange{9.36}) < \textcolor{blue}{0.01}
+\end{eqnarray*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{\% in Poverty vs. \% SC-ST}
+
+
+\dq{What can you say about the relationship between \% in poverty and \% SC-ST in a sample of 100 districts in India?}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graphs/l08f13.pdf}
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{\% in Poverty vs \% SC-ST - linear model}
+
+\pq{Which of the below is the best interpretation of the slope?}
+
+{\small
+\begin{center}
+\begin{tabular}{rlrrrr}
+  \hline
+ & term & estimate & std.error & statistic & p.value \\ 
+  \hline
+1 & (Intercept) & 0.10 & 0.02 & 5.75 & 0.00 \\ 
+  2 & pSCST & 0.03 & 0.06 & 0.50 & 0.62 \\ 
+   \hline
+\end{tabular}
+\end{center}
+}
+
+\begin{enumerate}[(a)]
+\item A 1\% increase in SC-ST population in a district is associated with a 3\% increase in \% of asset poor.
+\solnMult{A 1\% increase in SC-ST population in a district is associated with a 0\% increase in \% of asset poverty.}
+\item An additional 1\% of SC-ST population increases the \% of asset poor in a district by 10\%.
+\item In districts with zero SC-ST population, \% of asset poor is expected to be 75\%.
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{\% in Poverty vs. \% SC-ST - linear model}
+
+\dq{Do these data provide convincing evidence that there is a statistically significant relationship between \% SC-ST and \% asset poor in randomly chosen Indian districts?}
+
+{\small
+\begin{center}
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & Std. Error & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+(Intercept) & 0.1049 & 0.0182 & 5.75 & 0.0000 \\ 
+  pSCST & 0.0301 & 0.0602 & 0.50 & 0.6179 \\ 
+   \hline
+\end{tabular}
+\end{center}
+}
+\soln{\only<2->{No, the p-value for \% SCST is low, indicating that the data does not provide convincing evidence that the slope parameter is different than 0.
+}}
+
+$\:$ \\
+
+\dq{How reliable is this p-value if these zip code areas are not randomly selected?}
+\soln{\only<3->{Not very...
+}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{CI for the slope}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Confidence interval for the slope}
+
+\pq{{\small Remember that a confidence interval is calculated as $point~estimate \pm ME$ and the degrees of freedom associated with the slope in a simple linear regression is $n - 2$. Which of the below is the correct 95\% confidence interval for the slope parameter? Note that the model is based on observations from 27 twins.}}
+
+{\footnotesize
+\begin{center}
+\begin{tabular}{rrrrr}
+  \hline
+ & Estimate & Std. Error & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+(Intercept) & 9.2076 & 9.2999 & 0.99 & 0.3316 \\ 
+  bioIQ & 0.9014 & 0.0963 & 9.36 & 0.0000 \\ 
+   \hline
+\end{tabular}
+\end{center}
+}
+
+\vspace{-0.5cm}
+
+\twocol{0.4}{0.6}
+{
+\begin{enumerate}[(a)]
+\item $9.2076 \pm 1.65 \times 9.2999$
+\solnMult{ $0.9014 \pm 2.06 \times 0.0963$}
+\item $0.9014 \pm 1.96 \times 0.0963$
+\item $9.2076 \pm 1.96 \times 0.0963$
+\end{enumerate}
+}
+{
+\soln{\onslide<2->{\orange{
+\begin{eqnarray*}
+\pause
+n &=& 27 \qquad df = 27 - 2 = 25 \\
+\pause
+95\%:~t^\star_{25} &=& 2.06 \\
+\pause
+0.9014 &\pm& 2.06 \times 0.0963 \\
+\pause
+(0.7 &,& 1.1)
+\end{eqnarray*}
+}}}}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Recap}
+
+\begin{itemize}
+
+\item Inference for the slope for a single-predictor linear regression model:
+\pause
+\begin{itemize}
+\item Hypothesis test:
+\[ T = \frac{b_1 - null~value}{SE_{b_1}} \qquad df = n - 2 \]
+\pause
+\item Confidence interval:
+\[ b_1 \pm t^\star_{df = n - 2} SE_{b_1} \]
+\end{itemize}
+
+\pause
+
+\item The null value is often 0 since we are usually checking for \hl{any} relationship between the explanatory and the response variable.
+
+\pause
+
+\item The regression output gives $b_1$, $SE_{b_1}$, and \hl{two-tailed} p-value for the $t$-test for the slope where the null value is 0.
+
+\pause
+
+\item We rarely do inference on the intercept, so we'll be focusing on the estimates and inference for the slope.
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+\frametitle{Caution}
+
+\begin{itemize}
+
+\item Always be aware of the type of data you're working with: random sample, non-random sample, or population.
+
+\pause
+
+\item Statistical inference, and the resulting p-values, are meaningless when you already have population data.
+
+\pause
+
+\item If you have a sample that is non-random (biased), inference on the results will be unreliable.
+
+\pause
+
+\item The ultimate goal is to have independent observations.
+
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
