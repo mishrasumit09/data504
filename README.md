@@ -1,6 +1,6 @@
 # DATA504, Term 2 (2020-21)
 
-Welcome to Data Science 504: Data Analytics in R, taught by [Sumit Mishra](https://sites.google.com/site/mishrasumitr/home).
+Welcome to Data Science 504: Data Analytics in R, taught by [Sumit Mishra](https://sumitrmishra.github.io).
 
 ## Schedule
 
